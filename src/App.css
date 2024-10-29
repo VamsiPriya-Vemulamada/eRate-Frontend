@@ -1,0 +1,281 @@
+
+/* =============== Style for services page ===================/
+
+/* Container styling for the whole component */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input and button container styling */
+.inputs {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Input field styling */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #007BFF;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Grid styling for the images */
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Image styling */
+.images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* No images found message */
+p {
+    font-size: 1.2rem;
+    color: #666;
+}
+/* ======================style for navigation bar============= /
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* App Container */
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer stays at the bottom */
+}
+
+/* Main Content Area */
+.content {
+    flex: 1; /* Fills the available space */
+}
+
+/* Navbar Styles */
+.nav {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Links inside the navbar */
+.nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s;
+}
+
+/* Change color on hover */
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Footer Styles */
+.banner {
+    background-color: #282c34; /* Dark background */
+    color: white; /* White text */
+    padding: 20px; /* Space inside the footer */
+    text-align: center; /* Center-align text */
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* ======================= Style for About Page ======================= */
+
+/* Overall container styling */
+.about {
+    max-width: 800px; /* Maximum width for the section */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Padding inside the section */
+    text-align: center; /* Center-align text */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Heading styles */
+h4 {
+    font-size: 1.5rem; /* Size for subheading */
+    color: #555; /* Darker grey color */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+h3 {
+    font-size: 2rem; /* Size for main heading */
+    color: #333; /* Dark color for the main heading */
+    margin: 10px 0; /* Vertical spacing for headings */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1rem; /* Size for paragraph text */
+    color: #666; /* Medium grey color for text */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+/* ======================= Style for Contact Page ======================= */
+
+/* Container for contact information */
+.contact {
+    max-width: 800px; /* Maximum width for the contact section */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px; /* Padding inside the section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Individual contact item styling */
+.item {
+    text-align: center;
+    margin-bottom: 20px; /* Space below each contact item */
+}
+
+/* Heading styles */
+h4 {
+    font-size: 1.5rem; /* Size for subheading */
+    color: #333; /* Darker color for headings */
+    margin-bottom: 5px; /* Space below headings */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1rem; /* Size for paragraph text */
+    color: #666; /* Medium grey color for text */
+}
+
+/* Map container styling */
+.banner {
+    margin-top: 20px; /* Space above the map */
+}
+
+/* Responsive iframe styling */
+iframe {
+    border: 0; /* Remove default border */
+    width: 100%; /* Full width for responsiveness */
+    height: 450px; /* Fixed height for the map */
+    border-radius: 8px; /* Rounded corners for the map */
+}
+ /*=================== Login Page=======================*/
+
+ /* Styling for the login container */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Styling for the form */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Input fields styling */
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Link to Signup page */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}
