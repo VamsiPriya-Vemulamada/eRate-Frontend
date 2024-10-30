@@ -4,36 +4,31 @@ import { useNavigate, Link } from "react-router-dom"
 function Signup() {
 
     const history=useNavigate();
-
+    const [username,setUsername]=useState('')
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
-    const [confirmpassword,setconfirmPassword]=useState('')
-
+   
 
     async function submit(e){
         e.preventDefault();
 
         try{
 
-            await axios.post("http://localhost:7000/",{
-                email,password,confirmpassword
+            await axios.post("http://localhost:7000/user/signup",{
+                username,email,password
             })
             .then(res=>{
-                if(res.data=="exist"){
-                    history("/home",{state:{id:email}})
-                }
-                else if(res.data=="notexist"){
-                    alert("User have not sign up")
+                console.log(res.data)
+                console.log(res)
+                if(res.status="201"){
+                    alert("User created successfully")
+                    history("/login", {state:{id:email}})
                 }
             })
-            .catch(e=>{
-                alert("wrong details")
-                console.log(e);
-            })
-
         }
         catch(e){
             console.log(e);
+            alert("catch: User already exist, please login")
 
         }
 
@@ -41,23 +36,17 @@ function Signup() {
 
 
     return (
-        <div className="Signup">
+        <div className="signup">
 
-            <h1>Login</h1>
+            <h1>SignUp</h1>
 
             <form action="POST">
-                <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email"  />
-                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password"  />
-                <input type="confirmpassword" onChange={(e) => { setconfirmPassword(e.target.value) }} placeholder="confirmpassword"  />
-
-
+            <input type="username" onChange={(e) => { setUsername(e.target.value) }} placeholder="username"/>
+                <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email"/>
+                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password"/>
                 <input type="submit" onClick={submit} />
-
-            </form>
-
-            
-
-        </div>
+</form>
+</div>
     )
 }
 

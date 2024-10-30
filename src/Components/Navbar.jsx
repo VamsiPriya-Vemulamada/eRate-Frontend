@@ -12,11 +12,11 @@ export default function Nav () {
       <Link to="/Login">
         <div>Login</div>
       </Link>
-      <Link to="/Services">
+      {/* <Link to="/Services">
         <div>Services</div>
-      </Link>
+      </Link> */}
       <Link to="/ErateCard">
-        <div>Erate</div>
+        <div>ErateCard Sample</div>
       </Link>
     </div>
   );

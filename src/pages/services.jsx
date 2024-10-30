@@ -1,5 +1,5 @@
 import React, { useState }  from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom"
 
 // const API = import.meta.env.VITE_SERVICES_API_URI;
 const API_KEY =  import.meta.env.VITE_SERVICES_API_KEY;
@@ -10,6 +10,7 @@ const services = ( )=>
         const [search, setSearch] =useState( );
         const [data, setData] = useState( [ ]);
         const navigate = useNavigate( );
+        const location=useLocation();
         const handleSearch = (event) =>{
             setSearch(event.target.value)
         }
@@ -35,13 +36,13 @@ const services = ( )=>
 const handleImageClick =(image)=>{
     console.log("Selected image:", image);
     navigate("/ErateCard", { state: { image } });
-   
 }
 
 return (
         <>
     <div className='container'>
-        <h1>Select a Card</h1>
+    <h3>Hello {location.state.id}, welcome to the eRate</h3>
+        <p>Lookup for a desired image for a card</p>
         <div className ='inputs'>
         <input type='text' placeholder='Search Images..' onChange={handleSearch}/>
         <button onClick={getData} >Select an Image</button>

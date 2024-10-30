@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from "react"
 import Signup from "./Signup";
 import axios from "axios"
-import { useNavigate, Link } from "react-router-dom"
+import {useNavigate, Link, useLocation } from "react-router-dom"
 
 function Login( ){
-
-    const history= useNavigate( );
+    const location = useLocation
+    const erateNavigation = useNavigate( );
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
 
@@ -14,22 +14,19 @@ function Login( ){
 
         try{
 
-            await axios.post("http://localhost:7000/",{
+            await axios.post("http://localhost:7000/user/login",{
                 email,password
             })
             .then(res=>{
-                if(res.data=="exist"){
-                    history("/Home",{state:{id:email}})
-                }
-                else if(res.data=="notexist"){
-                    alert("User have not sign up")
+                console.log(res.status)
+                console.log(res.data)
+                const detailsData = res.data
+                console.log(detailsData.user.username)
+                if(res.status==200){
+                    alert("sucess")
+                    erateNavigation( "/services", {state:{id:detailsData.user.username}})
                 }
             })
-            .catch(e=>{
-                alert("wrong details")
-                console.log(e);
-            })
-
         }
         catch(e){
             console.log(e);
@@ -39,6 +36,7 @@ function Login( ){
     }
     return( 
         <div className="login">
+            <h1>Login</h1>
             <form action="POST">
             <label for="email">Email:</label>
             <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email"  />
@@ -57,7 +55,7 @@ function Login( ){
 
         </div>
 
-        
+
     )
 
 

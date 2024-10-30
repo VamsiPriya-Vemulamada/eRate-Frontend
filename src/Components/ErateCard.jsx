@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import placeholder from "../assets/Images/placeholder.jpg"
 
 const ErateCard = () => {
     const location = useLocation(); // Invoke useLocation as a function
@@ -15,7 +16,8 @@ const [events,setEvents]= useState([]);
 useEffect(() => {
     const fetchEvents = async ()=>{
         try{
-            const response = await axios.get("http://localhost:7000/api/event");
+            const response = await axios.get("http://localhost:7000/events/");
+            console.log("Fetched events:", response.data);
         setEvents(response.data);
         }
         catch(error){
@@ -28,8 +30,13 @@ useEffect(() => {
 const handleSubmit = async (e) =>{
     e.preventDefault();
     try{
-        const newEvent ={ eventName,eventDate,eventlocation};
-        await axios.post(" ",newEvent);
+        const newEvent ={ 
+          eventname: eventName, // match schema property
+          date: eventDate,      // match schema property
+          location: eventlocation // match schema property
+        };
+        console.log(newEvent)
+        await axios.post("http://localhost:7000/events/",newEvent);
         console.log("event added successfully");
     }
     catch(error)
@@ -40,18 +47,20 @@ const handleSubmit = async (e) =>{
 
 return (
         <>
+       
             <div className="image-details">
-                <h1 style={{textAlign: "center"
-                }}>Build a Card</h1>
                 {image ? ( // Check if image exists before trying to access its properties
                     <>
+                    <h1 style={{textAlign: "center"}}>Build a Card</h1>
                         <img src={image.urls.full} alt={image.alt_description} style={{ width: "50%" , display: 'block', height: "auto", margin: " 0 auto"}} />
-                        
-                        
                         {/* Add any other details you want to display */}
                     </>
                 ) : (
-                    <p>No image data available.</p> // Fallback message if image is undefined
+                    <>
+                    <h1 style={{textAlign: "center"}}>Sample</h1>
+                    <img src= {placeholder} alt=" " style={{ width: "50%" , display: 'block', height: "auto", margin: " 0 auto"}} ></img>
+                    </>
+                   
                 )}
             </div>
         {/* Event Form */}

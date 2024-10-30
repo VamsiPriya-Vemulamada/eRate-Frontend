@@ -246,6 +246,7 @@ label {
 }
 
 /* Input fields styling */
+input[type="username"],
 input[type="email"],
 input[type="password"],
 input[type="submit"] {
@@ -271,6 +272,16 @@ input[type="submit"]:hover {
 }
 
 /* Link to Signup page */
+.signup {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh; /* Full height of the viewport */
+background-color: #f7f7f7;
+padding: 20px;
+}
+
 a {
     text-decoration: none;
     color: #007BFF;
@@ -278,4 +289,16 @@ a {
 
 a:hover {
     color: #0056b3;
+}
+
+/* ================== eRateCard=============== */
+
+.event-form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh; /* Full height of the viewport */
+background-color: #f7f7f7;
+padding: 20px;
 }
