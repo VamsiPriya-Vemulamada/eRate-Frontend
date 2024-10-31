@@ -76,7 +76,7 @@ https://www.linkedin.com/in/priyavemulamada/
 ## Future Enhancements
 * Upcoming Feature 1
 user has to check the even list
-Upcoming Feature 2
+* Upcoming Feature 2
 able to share the link
 
 
