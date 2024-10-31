@@ -27,9 +27,10 @@ This is a web application which is used to send invitation cards by just one cli
 - [Contact Information](#contact-information)
 - [Future Enhacements](#Future Enhacements)
 
-  ## Roadmap
+## Roadmap
   Used Trello App for project management
-  ###### WireFrame
+  
+  ## WireFrame
   pen and paper
 
 ## Technologies Used
@@ -56,20 +57,20 @@ npm run dev
 #### Configuration
 ```
 configure the environment variables before using this code in .env file
-##### API Documentation
+### API Documentation
 API key : https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY
 API documentation: https://unsplash.com/documentation
 
-###### Testing
+### Testing
 coming soon!
 
-###### Deployment
+### Deployment
 Netlify is used for the deployment
 
-###### License
+### License
 All the copy rights of this application belongs to priya :-)
 
-###### Contact
+### Contact
 https://www.linkedin.com/in/priyavemulamada/
 
 ## Future Enhancements
