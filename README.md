@@ -66,10 +66,10 @@ coming soon!
 ####### Deployment
 Netlify is used for the deployment
 
-######## [License](#license)
+####### [License](#license)
 All the copy rights of this application belongs to priya :-)
 
-######## [Contact Information](#contact-information)
+####### [Contact Information](#contact-information)
 https://www.linkedin.com/in/priyavemulamada/
 
 # Future Enhacements
