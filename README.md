@@ -15,14 +15,22 @@ eRate
 This is a web application which is used to send invitation cards by just one click. By just one click we can send the invitation cards for desired events with the specified date and location
 
 ## Table of Contents
+- [Roadmap](#Roadmap)-
+- [WireFrame](#Wireframe)-
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [API Documentation](#api-documentation)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [License](#license)
+- [License](#license)  
 - [Contact Information](#contact-information)
+- [Future Enhacements](#Future Enhacements)
+
+  ## Roadmap
+  Used Trello App for project management
+  ###### WireFrame
+  pen and paper
 
 ## Technologies Used
 This is a full stack application which is built with using MERN technologies.Frontend is built in React, Node, JavaScript and bootstrap
@@ -62,6 +70,11 @@ All the copy rights of this application belongs to priya :-)
 ######### [Contact Information](#contact-information)
 https://www.linkedin.com/in/priyavemulamada/
 
+# Future Enhacements
+Upcoming Feature 1
+user has to check the even list
+Upcoming Feature 2
+able to share the link
 
 
 
