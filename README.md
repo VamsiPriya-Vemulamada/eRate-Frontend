@@ -8,7 +8,8 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # eRate-Frontend
 
-# Project Title eRate
+# Project Title: 
+eRate
 
 ## Description
 This is a web application which is used to send invitation cards by just one click. By just one click we can send the invitation cards for desired events with the specified date and location
