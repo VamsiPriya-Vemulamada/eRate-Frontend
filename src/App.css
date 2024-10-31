@@ -106,8 +106,10 @@ p {
 /* Navbar Styles */
 .nav {
     display: flex;
-    background-color: #333;
+    background-color: #34495E ;
     padding: 10px;
+    text-align: left;
+    
 }
 
 /* Links inside the navbar */
@@ -121,17 +123,52 @@ p {
 /* Change color on hover */
 .nav a:hover {
     background-color: #ddd;
-    color: black;
+    color: whitesmoke;
 }
 
 /* Footer Styles */
-.banner {
-    background-color: #282c34; /* Dark background */
-    color: white; /* White text */
-    padding: 20px; /* Space inside the footer */
-    text-align: center; /* Center-align text */
-    margin-top: auto; /* Push the footer to the bottom */
-}
+
+/* Footer container styling */
+.footer {
+    background-color:#34495E;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title styling */
+  .title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Button container to align social icons */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between the buttons */
+  }
+  
+  /* Individual icon button styling */
+  .icon-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: whitesmoke;
+    transition: color 0.3s;
+  }
+  
+  /* Icon hover effect */
+  .icon-button:hover {
+    color: #f00; /* Changes color to red on hover */
+  }
+  
 
 /* ======================= Style for About Page ======================= */
 
@@ -172,47 +209,47 @@ p {
 
 /* ======================= Style for Contact Page ======================= */
 
-/* Container for contact information */
-.contact {
-    max-width: 800px; /* Maximum width for the contact section */
-    margin: 0 auto; /* Center the section horizontally */
-    padding: 20px; /* Padding inside the section */
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+.contact-header {
+    text-align: center; /* Center align the header */
+    margin: 20px 0; /* Space above and below the header */
 }
 
-/* Individual contact item styling */
 .item {
-    text-align: center;
-    margin-bottom: 20px; /* Space below each contact item */
+    border: 1px solid #ccc; /* Light border around each item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the item */
+    margin: 10px auto; /* Center the item and add space */
+    max-width: 400px; /* Set a maximum width */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
-/* Heading styles */
-h4 {
-    font-size: 1.5rem; /* Size for subheading */
-    color: #333; /* Darker color for headings */
-    margin-bottom: 5px; /* Space below headings */
+.item h4 {
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Bold for headings */
 }
 
-/* Paragraph styling */
-p {
-    font-size: 1rem; /* Size for paragraph text */
-    color: #666; /* Medium grey color for text */
+.item p {
+    margin: 5px 0 0; /* Space below the paragraph */
+    color: #333; /* Darker text color */
 }
 
-/* Map container styling */
 .banner {
-    margin-top: 20px; /* Space above the map */
+    background-color: #34495E ; /* Light blue background color */
+    color: white; /* White text color */
+    padding: 30px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align the text */
+    margin: 20px auto; /* Center the banner horizontally */
+    max-width: 600px; /* Set a maximum width for a medium-sized banner */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
 }
 
-/* Responsive iframe styling */
 iframe {
-    border: 0; /* Remove default border */
-    width: 100%; /* Full width for responsiveness */
-    height: 450px; /* Fixed height for the map */
-    border-radius: 8px; /* Rounded corners for the map */
+    border-radius: 8px; /* Rounded corners for the iframe */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for the map */
 }
+
  /*=================== Login Page=======================*/
 
  /* Styling for the login container */
@@ -260,7 +297,7 @@ input[type="submit"] {
 
 /* Submit button styling */
 input[type="submit"] {
-    background-color: #007BFF;
+    background-color: #34495E;
     color: white;
     border: none;
     cursor: pointer;
@@ -284,21 +321,133 @@ padding: 20px;
 
 a {
     text-decoration: none;
-    color: #007BFF;
+    color: #34495E;
 }
 
 a:hover {
-    color: #0056b3;
+    color:#34495E;
 }
 
 /* ================== eRateCard=============== */
 
-.event-form{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 100vh; /* Full height of the viewport */
-background-color: #f7f7f7;
-padding: 20px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.image-details {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-details img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.event-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 400px; /* Set a max width for the form */
+}
+
+.event-form h4 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.event-form div {
+    margin-bottom: 15px;
+}
+
+.event-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.event-form input {
+    width: 100%; /* Full width input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.event-form button {
+    width: 100%; /* Full width button */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #34495E; /* Green background for button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.event-form button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.event-list {
+    margin: 20px auto;
+    max-width: 600px; /* Set a max width for the list */
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-list h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.event-list ul {
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0;
+}
+
+.event-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Separator between list items */
+}
+
+.event-list li:last-child {
+    border-bottom: none; /* Remove the last border */
+}
+
+.event-list p {
+    text-align: center;
+    color: #777; /* Light grey for no events message */
+}
+.title {
+    text-align: center; /* Center align the title */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.placeholder-image {
+    width: 30%; /* Set width to 30% for a smaller size */
+    max-width: 200px; /* Optional: Set a max-width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Use block display */
+    margin: 20px auto; /* Center the image horizontally and add vertical spacing */
+    border-radius: 10px; /* Optional: Rounded corners for the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a slight shadow */
+}
+/* ====================vertical Grid ================================*/
+/* styles.css */
+.VerticalGrid {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    line-height: 1.5;
 }

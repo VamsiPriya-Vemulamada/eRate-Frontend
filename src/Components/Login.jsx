@@ -4,8 +4,8 @@ import axios from "axios"
 import {useNavigate, Link, useLocation } from "react-router-dom"
 
 function Login( ){
-    const location = useLocation
-    const erateNavigation = useNavigate( );
+    const location = useLocation // to use this other location
+    const erateNavigation = useNavigate( ); // for navigation
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
 
@@ -24,7 +24,7 @@ function Login( ){
                 console.log(detailsData.user.username)
                 if(res.status==200){
                     alert("sucess")
-                    erateNavigation( "/services", {state:{id:detailsData.user.username}})
+                    erateNavigation( "/services", {state:{id:detailsData.user.username}}) // sending username to appear on the page
                 }
             })
         }

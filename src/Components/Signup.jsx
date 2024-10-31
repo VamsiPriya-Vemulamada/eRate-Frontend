@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
-import { useNavigate, Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 function Signup() {
 
-    const history=useNavigate();
+    const history=useNavigate(); // for navigation
     const [username,setUsername]=useState('')
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
@@ -22,7 +22,7 @@ function Signup() {
                 console.log(res)
                 if(res.status="201"){
                     alert("User created successfully")
-                    history("/login", {state:{id:email}})
+                    history("/login", {state:{id:email}}) // sending the email to login page
                 }
             })
         }

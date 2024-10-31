@@ -11,6 +11,7 @@ import './App.css'
 function App() {
   return (
     <>
+  {/* routes for all the pages */}
       <Routes>
       <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>

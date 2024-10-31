@@ -6,12 +6,12 @@ const Footer = ()=>
 {
     return ( 
         <>
-      <div className="banner">
+      <div className="footer">
           <div className="title">
             
-            <p> Erate Follow Us@</p>
-
-  <button><FaYoutube /> </button>
+            <p> eRrate Follow Us@</p>
+            {/* icons from the react-icons */}
+  <button> <FaYoutube /> </button>
   <button><FaInstagram /></button>
   <button><FaTwitter /></button>
   

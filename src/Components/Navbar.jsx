@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Nav () {
   return (
+    // linked all the pages to appear on nav bar
     <div className="nav">
       <Link to="/about">
         <div>About</div>
@@ -16,7 +17,7 @@ export default function Nav () {
         <div>Services</div>
       </Link> */}
       <Link to="/ErateCard">
-        <div>ErateCard Sample</div>
+        <div>eRateCard Sample</div>
       </Link>
     </div>
   );

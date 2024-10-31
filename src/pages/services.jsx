@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom"
 
 // const API = import.meta.env.VITE_SERVICES_API_URI;
 const API_KEY =  import.meta.env.VITE_SERVICES_API_KEY;
-console.log(import.meta.env.VITE_SERVICES_API_KEY);
+console.log(import.meta.env.VITE_SERVICES_API_KEY); 
 
 const services = ( )=>
     {
@@ -35,7 +35,7 @@ const services = ( )=>
     
 const handleImageClick =(image)=>{
     console.log("Selected image:", image);
-    navigate("/ErateCard", { state: { image } });
+    navigate("/ErateCard", { state: { image } }); // sending the image to eRatecard
 }
 
 return (

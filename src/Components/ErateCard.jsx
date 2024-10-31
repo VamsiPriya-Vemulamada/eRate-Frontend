@@ -58,7 +58,7 @@ return (
                 ) : (
                     <>
                     <h1 style={{textAlign: "center"}}>Sample</h1>
-                    <img src= {placeholder} alt=" " style={{ width: "50%" , display: 'block', height: "auto", margin: " 0 auto"}} ></img>
+                    <img src= {placeholder} alt=" " className="placeholder-image" style={{ width: "50%" , display: 'block', height: "50%", margin: " 0 auto"}} ></img>
                     </>
                    
                 )}
@@ -92,7 +92,7 @@ return (
                 required
               />
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Send</button>
           </form>
         </div>
 
