@@ -25,7 +25,7 @@ This is a web application which is used to send invitation cards by just one cli
 - [Deployment](#deployment)
 - [License](#license)  
 - [Contact Information](#contact-information)
-- [Future Enhacements](#Future Enhacements)
+- [Future Enhacements](#Future-Enhacements)
 
 ## Roadmap
   Used Trello App for project management
@@ -74,9 +74,9 @@ All the copy rights of this application belongs to priya :-)
 https://www.linkedin.com/in/priyavemulamada/
 
 ## Future Enhancements
-* Upcoming Feature 1
+* Upcoming Feature 1:
 user has to check the even list
-* Upcoming Feature 2
+* Upcoming Feature 2 :
 able to share the link
 
 
