@@ -74,7 +74,7 @@ All the copy rights of this application belongs to priya :-)
 https://www.linkedin.com/in/priyavemulamada/
 
 ## Future Enhancements
-Upcoming Feature 1
+* Upcoming Feature 1
 user has to check the even list
 Upcoming Feature 2
 able to share the link
