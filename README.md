@@ -30,7 +30,16 @@ This is a web application which is used to send invitation cards by just one cli
 This is a full stack application which is built with using MERN technologies.Frontend is built in React, Node, JavaScript and bootstrap
 
 ## Installation
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
 ### Prerequisites
+npm create vite@latest
+npm start
+npm run dev
+  ```
+
 
 
 ### Steps to Install
