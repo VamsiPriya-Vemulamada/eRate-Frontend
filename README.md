@@ -1,84 +1,76 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# eRate-Frontend
-
-# Project Title: 
+Project Title:
 eRate
 
-## Description
-This is a web application which is used to send invitation cards by just one click. By just one click we can send the invitation cards for desired events with the specified date and location
+Description
+eRate is a web application that allows users to send invitation cards with just one click. Users can easily send invitation cards for their desired events by specifying the date and location.
 
-## Table of Contents
-- [Roadmap](#Roadmap)-
-- [WireFrame](#Wireframe)-
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [API Documentation](#api-documentation)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [License](#license)  
-- [Contact Information](#contact-information)
-- [Future Enhacements](#Future Enhacements)
+Table of Contents
+Roadmap
+Wireframe
+Technologies Used
+Installation
+Configuration
+API Documentation
+Testing
+Deployment
+License
+Contact Information
+Future Enhancements
+Roadmap
+Project management is handled using Trello.
 
-  ## Roadmap
-  Used Trello App for project management
-  ###### WireFrame
-  pen and paper
+Wireframe
+Initial sketches were created using pen and paper.
 
-## Technologies Used
-This is a full stack application which is built with using MERN technologies.Frontend is built in React, Node, JavaScript and bootstrap
+Technologies Used
+This is a full-stack application built using MERN technologies. The frontend is developed with React, Node.js, JavaScript, and Bootstrap.
 
-## Installation
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-### Prerequisites
-  ```
-### Steps to Install
-```bash
+Installation
+To install and run this application, follow the steps below:
+
+Prerequisites
+Node.js and npm should be installed on your machine.
+Steps to Install
+bash
+Copy code
+# Clone the repository
 git clone <repository-url>
+
+# Change directory to the project
 cd <project-directory>
+
+# Install server dependencies
 cd server
 npm install
+
+# Install client dependencies
 cd ../client
 npm install
+
+# Start the server
 cd ../server
 npm start
+
+# Start the client
 npm run dev
-#### Configuration
-```
-configure the environment variables before using this code in .env file
-##### API Documentation
-API key : https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY
-API documentation: https://unsplash.com/documentation
-###### Testing
-coming soon!
-####### Deployment
-Netlify is used for the deployment
+Configuration
+Before using the application, configure the environment variables in the .env file.
 
-######## [License](#license)
-All the copy rights of this application belongs to priya :-)
+API Documentation
+API Key: https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY
+API Documentation: Unsplash API
+Testing
+Coming soon!
 
-######### [Contact Information](#contact-information)
-https://www.linkedin.com/in/priyavemulamada/
+Deployment
+The application is deployed using Netlify.
 
-# Future Enhacements
-Upcoming Feature 1
-user has to check the even list
-Upcoming Feature 2
-able to share the link
+License
+All rights to this application belong to Priya. 😊
 
+Contact Information
+LinkedIn Profile
 
-
-
-
-
-
+Future Enhancements
+Upcoming Feature 1: Users will be able to check the event list.
+Upcoming Feature 2: Users will be able to share the invitation link.
