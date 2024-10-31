@@ -54,6 +54,7 @@ npm install
 cd ../server
 npm start
 npm run dev
+
 #### Configuration
 ```
 configure the environment variables before using this code in .env file
