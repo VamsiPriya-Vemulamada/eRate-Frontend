@@ -18,12 +18,10 @@ This is a web application which is used to send invitation cards by just one cli
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Configuration](#configuration)
-- [Usage](#usage)
 - [API Documentation](#api-documentation)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 - [Contact Information](#contact-information)
 
 ## Technologies Used
@@ -47,6 +45,24 @@ npm install
 cd ../server
 npm start
 npm run dev
+#### Configuration
+```
+configure the environment variables before using this code in .env file
+##### API Documentation
+API key : https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY
+API documentation: https://unsplash.com/documentation
+###### Testing
+coming soon!
+####### Deployment
+Netlify is used for the deployment
+
+######## [License](#license)
+All the copy rights of this application belongs to priya :-)
+
+######### [Contact Information](#contact-information)
+
+
+
 
 
 
