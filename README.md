@@ -35,13 +35,7 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
 ### Prerequisites
-npm create vite@latest
-npm start
-npm run dev
   ```
-
-
-
 ### Steps to Install
 ```bash
 git clone <repository-url>
@@ -52,3 +46,5 @@ cd ../client
 npm install
 cd ../server
 npm start
+npm run dev
+
