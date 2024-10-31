@@ -63,16 +63,16 @@ API documentation: https://unsplash.com/documentation
 ###### Testing
 coming soon!
 
-####### Deployment
+###### Deployment
 Netlify is used for the deployment
 
-####### [License](#license)
+###### License
 All the copy rights of this application belongs to priya :-)
 
-####### [Contact Information](#contact-information)
+###### Contact
 https://www.linkedin.com/in/priyavemulamada/
 
-# Future Enhacements
+## Future Enhancements
 Upcoming Feature 1
 user has to check the even list
 Upcoming Feature 2
