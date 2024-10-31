@@ -59,15 +59,17 @@ configure the environment variables before using this code in .env file
 ##### API Documentation
 API key : https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY
 API documentation: https://unsplash.com/documentation
+
 ###### Testing
 coming soon!
+
 ####### Deployment
 Netlify is used for the deployment
 
 ######## [License](#license)
 All the copy rights of this application belongs to priya :-)
 
-######### [Contact Information](#contact-information)
+######## [Contact Information](#contact-information)
 https://www.linkedin.com/in/priyavemulamada/
 
 # Future Enhacements
