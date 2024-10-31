@@ -22,21 +22,16 @@ This is a web application which is used to send invitation cards by just one cli
 - [API Documentation](#api-documentation)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Contact Information](#contact-information)
 
 ## Technologies Used
-- MongoDB
-- Express.js
-- React
-- Node.js
+This is a full stack application which is built with using MERN technologies.Frontend is built in React, Node, JavaScript and bootstrap
 
 ## Installation
 ### Prerequisites
-- Node.js
-- MongoDB
+
 
 ### Steps to Install
 ```bash
